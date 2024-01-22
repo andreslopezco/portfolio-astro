@@ -1,0 +1,15 @@
+---
+interface Props {
+  buttonURL: string;
+}
+
+const { buttonURL } = Astro.props;
+---
+
+<a
+  class="flex flex-row items-center justify-center w-[160px] h-[40px] border border-white hover:border-green-300 hover:text-green-300 text-sm uppercase transition"
+  href={buttonURL}
+  target="_blank"
+>
+  View Live
+</a>

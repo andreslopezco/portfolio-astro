@@ -9,13 +9,13 @@ import SkillCard from "../components/SkillCard.astro";
 <Layout title="Andres Lopez | Front-End Developer">
   <Section id="home">
     <div
-      class="grid grid-cols-1 md:grid-cols-2 w-screen lg:w-[950px] mt-28 px-10 lg:px-0"
+      class="grid grid-cols-1 md:grid-cols-2 w-screen min-h-screen lg:w-[950px] pt-28 px-10 lg:px-0"
     >
       <div class="flex flex-col justify-center">
-        <h1 class="my-5 text-3xl font-bold uppercase">
+        <h1 class="my-5 text-3xl text-balance font-bold uppercase">
           Hello,<br />welcome to my portfolio!
         </h1>
-        <p class="m-0">
+        <p class="m-0 text-pretty">
           I'm a junior front-end developer based in Bogotá, Colombia, with a
           strong passion for creating functional and visually appealing
           websites. I am committed to expanding my skills and knowledge to
@@ -33,7 +33,7 @@ import SkillCard from "../components/SkillCard.astro";
     </div>
   </Section>
   <Section id="experience">
-    <h1 class="my-5 text-3xl font-bold uppercase">Experience</h1>
+    <h1 class="my-5 text-3xl text-balance font-bold uppercase">Experience</h1>
     <ExperienceCard
       title="Freelancer"
       date="2022 - Current"
@@ -48,7 +48,9 @@ import SkillCard from "../components/SkillCard.astro";
     </ExperienceCard>
   </Section>
   <Section id="projects">
-    <h1 class="my-5 text-3xl font-bold uppercase">Know my projects</h1>
+    <h1 class="my-5 text-3xl text-balance font-bold uppercase">
+      Know my projects
+    </h1>
     <div
       class="grid grid-cols-1 lg:grid-cols-2 justify-center w-full lg:w-[900px] gap-12 lg:my-6 p-14 lg:p-0"
     >
@@ -65,7 +67,7 @@ import SkillCard from "../components/SkillCard.astro";
     </div>
   </Section>
   <Section id="skills">
-    <h1 class="my-5 text-3xl font-bold uppercase">My skills</h1>
+    <h1 class="my-5 text-3xl text-balance font-bold uppercase">My skills</h1>
     <div class="grid grid-cols-2 lg:grid-cols-4 justify-center gap-12 my-6">
       <SkillCard title="HTML">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 452 520">

@@ -20,7 +20,7 @@ const { title, description } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" class="md:snap-mandatory md:snap-y">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -35,8 +35,7 @@ const { title, description } = Astro.props;
     >
     </div>
     <Header />
-    <SocialArea />
-    <main>
+    <main class="flex flex-col items-center">
       <slot />
     </main>
   </body>

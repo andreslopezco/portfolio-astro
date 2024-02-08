@@ -1,0 +1,21 @@
+---
+import ProjectButton from "./ProjectButton.astro";
+
+const { title, description, img, tags, link, github } = Astro.props;
+---
+
+<article
+  class="flex flex-col gap-4 p-5 border rounded-xl bg-white/5 border-white/10"
+>
+  <h3 class="text-xl font-semibold">{title}</h3>
+  <p class="text-base font-light text-pretty">{description}</p>
+  <div class="flex flex-row flex-wrap gap-2">
+    {
+      tags.map((tag: unknown) => (
+        <span class="bg-gray-100 text-[--color-2] text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-white/5 dark:text-[--color-3] border border-white/10">
+          {tag}
+        </span>
+      ))
+    }
+  </div>
+</article>

@@ -62,10 +62,17 @@ const { title, description } = Astro.props;
 
   html {
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
   }
 
   body {
     background: var(--color-2);
     color: var(--color-3);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
   }
 </style>

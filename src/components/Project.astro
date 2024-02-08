@@ -1,0 +1,28 @@
+---
+import ProjectItem from "./ProjectItem.astro";
+
+const PROJECTS = [
+  {
+    title: "clinica-de-obesidad",
+    description:
+      "Crafted using the powerful tools of WordPress and Elementor, this project is set to redefine the online presence of a specialized clinic dedicated to tackling obesity.",
+    img: "./clinica-de-obesidad.png",
+    tags: ["WordPress", "Elementor"],
+    link: "https://clinicadeobesidad.andreslopez.co/",
+    github: "",
+  },
+  {
+    title: "credit-card-simulator",
+    description:
+      "Crafted using the powerful tools of WordPress and Elementor, this project is set to redefine the online presence of a specialized clinic dedicated to tackling obesity. ",
+    img: "./clinica-de-obesidad.png",
+    tags: "WordPress, Elementor",
+    link: "https://clinicadeobesidad.andreslopez.co/",
+    github: "https://github.com/andreslopezco/credit-card-simulator",
+  },
+];
+---
+
+<div class="flex flex-row justify-around gap-5">
+  {PROJECTS.map((project) => <ProjectItem {...project} />)}
+</div>

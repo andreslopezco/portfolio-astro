@@ -1,0 +1,23 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    date: "2022 - Current",
+    title: "Freelancer",
+    location: "Bogota, Colombia (Remote)",
+    description:
+      "As a freelance web developer, I have gained extensive experience creating stunning websites using WordPress and Elementor. With a focus on user experience and responsiveness, I ensure each site I create meets the needs of both clients and users.",
+  },
+];
+---
+
+<ol class="relative ml-4 border-gray-200 border-s dark:border-gray-700">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

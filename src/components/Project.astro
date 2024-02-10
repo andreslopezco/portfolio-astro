@@ -1,0 +1,28 @@
+---
+import ProjectItem from "./ProjectItem.astro";
+
+const PROJECTS = [
+  {
+    title: "clinica-de-obesidad",
+    description:
+      "Empowered by WordPress and Elementor, this project aims to revolutionize the online presence of a specialized obesity clinic, prioritizing user engagement.",
+    img: "./clinica-de-obesidad.png",
+    tags: ["WordPress", "Elementor", "CSS"],
+    link: "https://clinicadeobesidad.andreslopez.co/",
+    github: "",
+  },
+  {
+    title: "credit-card-simulator",
+    description:
+      "A cutting-edge credit card simulator project, showcasing advanced front-end development skills with a focus on user interaction and visual appeal.",
+    img: "./clinica-de-obesidad.png",
+    tags: ["HTML", "CSS", "JavaScript", "Astro", "Tailwind CSS"],
+    link: "https://clinicadeobesidad.andreslopez.co/",
+    github: "https://github.com/andreslopezco/credit-card-simulator",
+  },
+];
+---
+
+<div class="grid justify-around grid-cols-1 gap-5 md:grid-cols-2">
+  {PROJECTS.map((project) => <ProjectItem {...project} />)}
+</div>

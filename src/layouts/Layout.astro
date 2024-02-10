@@ -28,11 +28,9 @@ const { title, description } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body
-    class="bg-[--color-3] dark:bg-[--color-2] text-[--color-2] dark:text-[--color-3]"
-  >
+  <body class="bg-[--color-2] text-[--color-3]">
     <div
-      class="absolute top-0 z-[-2] h-screen w-screen bg-[--color-3] dark:bg-[--color-2] bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
+      class="absolute top-0 z-[-2] h-screen w-screen bg-[--color-2] bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
     >
     </div>
     <Header />
@@ -44,7 +42,7 @@ const { title, description } = Astro.props;
 
 <style is:global>
   :root {
-    color-scheme: light dark;
+    color-scheme: dark;
 
     --color-1: #7e57c2;
     --color-2: #090c08;

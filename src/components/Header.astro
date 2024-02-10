@@ -1,28 +1,22 @@
-<header
-  class="grid grid-cols-3 w-full justify-between min-h-36 m-0 px-10 lg:px-14"
->
+---
+import Menu from "./icons/Menu.astro";
+---
+
+<header class="grid max-w-6xl grid-cols-2 px-10 m-auto min-h-36 lg:px-14">
   <div class="flex items-center justify-start">
     <img class="w-40" src="/logo.png" alt="Logo" />
   </div>
 
-  <nav class="flex items-center justify-center gap-10 uppercase">
+  <nav class="items-center justify-end hidden gap-10 lg:flex">
     <a href="#home">Home</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <div class="flex items-center justify-end">
-    <!-- <button
-      class="hidden items-center justify-center w-36 h-12 border border-[--color-3] text-sm uppercase hover:border-[--color-1] hover:text-[--color-1] hover:bg-[--color-3] transition lg:flex"
-    >
-      Contact Me
-    </button> -->
-
-    <button
-      class="group relative inline-flex h-12 items-center justify-center overflow-hidden rounded-md border border-[--color-3] bg-transparent px-6 font-medium text-[--color-3] transition-all duration-100 [box-shadow:5px_5px_rgb(82_82_82)] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:0px_0px_rgb(82_82_82)]"
-    >
-      Download CV
-    </button>
-  </div>
+  <nav class="flex items-center justify-end lg:hidden">
+    <a href="">
+      <Menu />
+    </a>
+  </nav>
 </header>

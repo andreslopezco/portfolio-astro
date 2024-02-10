@@ -22,29 +22,27 @@ Welcome to the repository for my personal portfolio website! This website serves
 
 To view the website locally or contribute to the project, follow these steps:
 
-1.  **Clone Repository:** Use NPM to create a new project based on the latest version of Astro using the following command:
+1.  **Clone Repository:**
 
-    bashCopy code
+    Use NPM to create a new project based on the latest version of Astro using the following command:
 
     `npm create astro@latest -- --template andreslopezco/portfolio-astro`
 
     This will create a new project based on the Astro template.
 
-2.  **Navigate to Project Directory:** Once the project is created, navigate to the project directory using the command line:
+2.  **Navigate to Project Directory:**
 
-    bashCopy code
+    Once the project is created, navigate to the project directory using the command line:
 
     `cd your-project-directory`
 
 3.  **Install Dependencies:** Install project dependencies using NPM:
 
-    bashCopy code
-
     `npm install`
 
-4.  **Run Development Server:** Start the development server to preview changes locally:
+4.  **Run Development Server:**
 
-    bashCopy code
+    Start the development server to preview changes locally:
 
     `npm run dev`
 

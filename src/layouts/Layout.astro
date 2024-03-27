@@ -9,6 +9,7 @@ import "@fontsource/poppins/700.css";
 import "@fontsource/poppins/800.css";
 import "@fontsource/poppins/900.css";
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
 interface Props {
   title: string;
@@ -24,8 +25,7 @@ const { title, description } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href=/img/favicon.svg" />
     <title>{title}</title>
   </head>
   <body class="bg-[--color-2] text-[--color-3]">
@@ -36,6 +36,7 @@ const { title, description } = Astro.props;
     <Header />
     <main class="flex flex-col items-center">
       <slot />
+      <Footer />
     </main>
   </body>
 </html>
